@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820">
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f7fbff"/><stop offset="1" stop-color="#eef4ff"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0f2346" flood-opacity=".12"/></filter><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12Z" fill="#6e819b"/></marker></defs>
+  <rect width="1400" height="820" fill="url(#bg)"/>
+  <text x="700" y="85" text-anchor="middle" font-family="Segoe UI,Arial" font-size="38" font-weight="800" fill="#0f2346">MODELO DE DATOS PRINCIPAL</text>
+  <text x="700" y="122" text-anchor="middle" font-family="Segoe UI,Arial" font-size="18" fill="#68758a">Relaciones utilizadas para registrar clientes y pedidos</text>
+  <g filter="url(#s)">
+    <rect x="120" y="240" width="330" height="330" rx="26" fill="#fff" stroke="#cbdcff"/>
+    <rect x="120" y="240" width="330" height="72" rx="26" fill="#2563eb"/><rect x="120" y="286" width="330" height="26" fill="#2563eb"/>
+    <text x="285" y="285" text-anchor="middle" font-family="Segoe UI" font-size="25" font-weight="800" fill="#fff">CLIENTES</text>
+    <text x="150" y="355" font-family="Segoe UI" font-size="17" font-weight="700" fill="#0f2346">PK  id_cliente</text>
+    <text x="150" y="395" font-family="Segoe UI" font-size="16" fill="#68758a">nombre</text><text x="150" y="430" font-family="Segoe UI" font-size="16" fill="#68758a">correo</text><text x="150" y="465" font-family="Segoe UI" font-size="16" fill="#68758a">usuario</text><text x="150" y="500" font-family="Segoe UI" font-size="16" fill="#68758a">contraseña</text><text x="150" y="535" font-family="Segoe UI" font-size="16" fill="#68758a">datos de contacto</text>
+  </g>
+  <g filter="url(#s)">
+    <rect x="535" y="205" width="330" height="405" rx="26" fill="#fff" stroke="#cbdcff"/>
+    <rect x="535" y="205" width="330" height="72" rx="26" fill="#0f2346"/><rect x="535" y="251" width="330" height="26" fill="#0f2346"/>
+    <text x="700" y="250" text-anchor="middle" font-family="Segoe UI" font-size="25" font-weight="800" fill="#fff">PEDIDOS</text>
+    <text x="565" y="320" font-family="Segoe UI" font-size="17" font-weight="700" fill="#0f2346">PK  id_pedido</text>
+    <text x="565" y="360" font-family="Segoe UI" font-size="17" font-weight="700" fill="#2563eb">FK  id_cliente</text>
+    <text x="565" y="400" font-family="Segoe UI" font-size="16" fill="#68758a">fecha_pedido</text><text x="565" y="440" font-family="Segoe UI" font-size="16" fill="#68758a">total</text><text x="565" y="480" font-family="Segoe UI" font-size="16" fill="#68758a">estado</text><text x="565" y="520" font-family="Segoe UI" font-size="16" fill="#68758a">observaciones</text><text x="565" y="565" font-family="Segoe UI" font-size="15" font-weight="700" fill="#14a064">Ej.: SOLICITUD RECIBIDA</text>
+  </g>
+  <g filter="url(#s)">
+    <rect x="950" y="240" width="330" height="330" rx="26" fill="#fff" stroke="#cbdcff"/>
+    <rect x="950" y="240" width="330" height="72" rx="26" fill="#2563eb"/><rect x="950" y="286" width="330" height="26" fill="#2563eb"/>
+    <text x="1115" y="285" text-anchor="middle" font-family="Segoe UI" font-size="24" font-weight="800" fill="#fff">DETALLE_PEDIDO</text>
+    <text x="980" y="355" font-family="Segoe UI" font-size="17" font-weight="700" fill="#0f2346">PK  id_detalle</text>
+    <text x="980" y="395" font-family="Segoe UI" font-size="17" font-weight="700" fill="#2563eb">FK  id_pedido</text>
+    <text x="980" y="435" font-family="Segoe UI" font-size="16" fill="#68758a">nombre_servicio</text><text x="980" y="475" font-family="Segoe UI" font-size="16" fill="#68758a">detalle</text><text x="980" y="515" font-family="Segoe UI" font-size="16" fill="#68758a">precio</text>
+  </g>
+  <line x1="450" y1="405" x2="535" y2="405" stroke="#6e819b" stroke-width="4" marker-end="url(#a)"/>
+  <text x="493" y="385" text-anchor="middle" font-family="Segoe UI" font-size="14" font-weight="800" fill="#2563eb">1 : N</text>
+  <line x1="865" y1="405" x2="950" y2="405" stroke="#6e819b" stroke-width="4" marker-end="url(#a)"/>
+  <text x="908" y="385" text-anchor="middle" font-family="Segoe UI" font-size="14" font-weight="800" fill="#2563eb">1 : N</text>
+  <rect x="300" y="675" width="800" height="72" rx="20" fill="#eaf2ff" stroke="#cfdeff"/>
+  <text x="700" y="718" text-anchor="middle" font-family="Segoe UI" font-size="18" font-weight="700" fill="#0f2346">Un cliente puede tener varios pedidos y cada pedido puede contener varios servicios.</text>
+</svg>

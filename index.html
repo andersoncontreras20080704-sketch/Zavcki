@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ZAVCKI - Sistema de cotizaciones y gestión de servicios de software. Proyecto de certificación 2026." />
+  <meta name="theme-color" content="#0f2346" />
+  <title>ZAVCKI | Proyecto de Sistema Informático</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <header class="site-header" id="inicio">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">Z</span>
+        <span class="brand-copy"><strong>ZAVCKI</strong><small>Soluciones de software</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="mainNav">
+        <a href="#proposito">Propósito</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#alcance">Alcance</a>
+        <a href="#caracteristicas">Funciones</a>
+        <a href="#diseno">Diseño</a>
+        <a href="#prototipo">Prototipo</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#desarrollador" class="nav-cta">Desarrollador</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="hero-glow hero-glow-a"></div>
+      <div class="hero-glow hero-glow-b"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">PROYECTO DE CERTIFICACIÓN · 2026</span>
+          <h1>Gestión y cotización de servicios de software <span>en un solo sistema.</span></h1>
+          <p class="hero-lead">ZAVCKI es un sistema informático desarrollado para organizar clientes, configurar servicios tecnológicos, calcular cotizaciones, registrar pedidos y dar seguimiento al proceso de una solicitud.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proposito">Conocer el proyecto <span>→</span></a>
+            <a class="btn btn-ghost" href="#prototipo">Ver prototipo</a>
+          </div>
+          <div class="hero-meta">
+            <div><span>Desarrollador</span><strong>Anderson Isaac Contreras Melgar</strong></div>
+            <div><span>Carrera</span><strong>Perito en Desarrollo de Contenido Digital y Software</strong></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Vista conceptual del sistema ZAVCKI">
+          <div class="window-card">
+            <div class="window-top">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>ZAVCKI · Panel principal</span>
+            </div>
+            <div class="app-shell">
+              <aside class="mini-sidebar">
+                <div class="mini-logo">Z</div>
+                <div class="mini-nav active"></div>
+                <div class="mini-nav"></div>
+                <div class="mini-nav"></div>
+                <div class="mini-nav"></div>
+                <div class="mini-nav"></div>
+              </aside>
+              <div class="mini-content">
+                <div class="mini-title"><span></span><small></small></div>
+                <div class="metric-row">
+                  <div class="metric"><b>Clientes</b><strong>Registro</strong><i>Seguro</i></div>
+                  <div class="metric"><b>Servicios</b><strong>7+</strong><i>Configurables</i></div>
+                  <div class="metric"><b>Pedidos</b><strong>MySQL</strong><i>Persistencia</i></div>
+                </div>
+                <div class="mini-panels">
+                  <div class="mini-panel quote-panel">
+                    <div class="panel-heading">Cotización dinámica</div>
+                    <div class="service-line"><span>Servicio base</span><b>Q3,500</b></div>
+                    <div class="service-line"><span>Extras seleccionados</span><b>+ Q600</b></div>
+                    <div class="service-total"><span>Total estimado</span><strong>Q4,100</strong></div>
+                  </div>
+                  <div class="mini-panel timeline-panel">
+                    <div class="panel-heading">Seguimiento</div>
+                    <div class="step done"><i></i><span>Solicitud recibida</span></div>
+                    <div class="step active"><i></i><span>En revisión</span></div>
+                    <div class="step"><i></i><span>Desarrollo</span></div>
+                    <div class="step"><i></i><span>Entrega</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-chip chip-one">Java + MySQL</div>
+          <div class="floating-chip chip-two">Cotizaciones automáticas</div>
+        </div>
+      </div>
+
+      <div class="container hero-stats reveal delay-2">
+        <article><strong>Java</strong><span>Aplicación de escritorio</span></article>
+        <article><strong>MySQL</strong><span>Persistencia de datos</span></article>
+        <article><strong>DAO</strong><span>Acceso organizado a datos</span></article>
+        <article><strong>Incremental</strong><span>Modelo de desarrollo</span></article>
+      </div>
+    </section>
+
+    <section class="section" id="proposito">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">01 · PROPÓSITO DEL PROYECTO</span>
+          <h2>Convertir un proceso disperso en un flujo claro y controlado.</h2>
+          <p>ZAVCKI se desarrolló para evitar cotizaciones manuales, cálculos inconsistentes y registros separados de clientes o pedidos. El sistema concentra la información en una sola solución y facilita el seguimiento de cada solicitud.</p>
+        </div>
+
+        <div class="purpose-grid">
+          <article class="info-card reveal">
+            <div class="icon-box">!</div>
+            <h3>Problema identificado</h3>
+            <p>La creación manual de cotizaciones puede provocar errores en precios, pérdida de datos y dificultad para conocer qué solicitó cada cliente.</p>
+          </article>
+          <article class="info-card reveal delay-1">
+            <div class="icon-box">◎</div>
+            <h3>¿Por qué se desarrolló?</h3>
+            <p>Para automatizar el cálculo de servicios y extras, registrar clientes, almacenar pedidos y presentar un proceso comercial más organizado.</p>
+          </article>
+          <article class="info-card reveal delay-2">
+            <div class="icon-box">↗</div>
+            <h3>¿A quién beneficia?</h3>
+            <p>A empresas de desarrollo de software y a sus clientes, ya que ambos pueden trabajar con información más clara, trazable y consistente.</p>
+          </article>
+          <article class="info-card reveal delay-3">
+            <div class="icon-box">✓</div>
+            <h3>Finalidad</h3>
+            <p>Proporcionar una herramienta capaz de gestionar el proceso desde la selección del servicio hasta el registro y seguimiento del pedido.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="objetivos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">02 · OBJETIVOS</span>
+          <h2>Un objetivo general y metas específicas medibles.</h2>
+        </div>
+
+        <div class="objective-layout">
+          <article class="objective-main reveal">
+            <span>OBJETIVO GENERAL</span>
+            <h3>Desarrollar un sistema informático en Java conectado a MySQL que automatice la cotización de servicios de software, el registro de clientes, la gestión de pedidos y su seguimiento, con el fin de organizar la información comercial de ZAVCKI y reducir procesos manuales.</h3>
+          </article>
+          <div class="objective-list">
+            <article class="objective-item reveal"><b>01</b><div><h4>Interfaz intuitiva</h4><p>Diseñar pantallas claras para que el usuario pueda registrarse, iniciar sesión y navegar entre los servicios.</p></div></article>
+            <article class="objective-item reveal delay-1"><b>02</b><div><h4>Cotización automática</h4><p>Calcular el precio final según el servicio elegido, opciones adicionales y configuración seleccionada.</p></div></article>
+            <article class="objective-item reveal delay-2"><b>03</b><div><h4>Persistencia de datos</h4><p>Guardar clientes, pedidos y detalles de cada solicitud dentro de una base de datos MySQL.</p></div></article>
+            <article class="objective-item reveal delay-3"><b>04</b><div><h4>Seguimiento</h4><p>Permitir consultar el estado de cada pedido para conocer el avance del proyecto solicitado.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="alcance">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">03 · ALCANCE</span>
+          <h2>Qué hace el sistema y hasta dónde llega.</h2>
+          <p>El alcance se centra en el proceso de cotización y gestión de servicios de software. La aplicación funciona como una herramienta de escritorio construida con Java Swing y conectada a una base de datos.</p>
+        </div>
+
+        <div class="scope-grid">
+          <article class="scope-card included reveal">
+            <div class="scope-title"><span>✓</span><h3>Incluido en el sistema</h3></div>
+            <ul>
+              <li>Registro e inicio de sesión de clientes.</li>
+              <li>Catálogo de productos y servicios tecnológicos.</li>
+              <li>Configuración de servicios y opciones adicionales.</li>
+              <li>Cálculo automático del total de una cotización.</li>
+              <li>Carrito para agrupar servicios seleccionados.</li>
+              <li>Registro de pedidos y detalle de pedido en MySQL.</li>
+              <li>Seguimiento del estado de una solicitud.</li>
+              <li>Validaciones y conexión con base de datos.</li>
+            </ul>
+          </article>
+          <article class="scope-card excluded reveal delay-1">
+            <div class="scope-title"><span>—</span><h3>Límites actuales</h3></div>
+            <ul>
+              <li>No procesa pagos bancarios reales.</li>
+              <li>No sustituye un sistema contable o de facturación fiscal.</li>
+              <li>El despliegue principal del prototipo es local.</li>
+              <li>La comunicación externa depende de medios como WhatsApp.</li>
+              <li>Las funciones avanzadas pueden incorporarse en futuras versiones.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="service-strip reveal">
+          <div class="service-intro"><span>SERVICIOS CONFIGURABLES</span><h3>Ejemplos integrados en ZAVCKI</h3></div>
+          <div class="service-scroll" aria-label="Servicios de ZAVCKI">
+            <div class="service-pill"><b>Sistemas personalizados</b><span>Desde Q5,000</span></div>
+            <div class="service-pill"><b>E-commerce</b><span>Desde Q3,500</span></div>
+            <div class="service-pill"><b>UI/UX</b><span>Desde Q1,800</span></div>
+            <div class="service-pill"><b>Apps móviles</b><span>Desde Q6,000</span></div>
+            <div class="service-pill"><b>Web corporativa</b><span>Desde Q2,500</span></div>
+            <div class="service-pill"><b>Sistemas en la nube</b><span>Desde Q4,000</span></div>
+            <div class="service-pill"><b>Consultoría</b><span>Desde Q500/h</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="caracteristicas">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <span class="eyebrow">04 · CARACTERÍSTICAS</span>
+          <h2>Funciones principales de ZAVCKI.</h2>
+          <p>Los módulos fueron diseñados para que el flujo del cliente avance de forma ordenada desde el acceso hasta el seguimiento del pedido.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal"><span>01</span><h3>Registro de clientes</h3><p>Captura los datos necesarios para relacionar cada pedido con la persona que lo solicita.</p></article>
+          <article class="feature-card reveal delay-1"><span>02</span><h3>Inicio de sesión</h3><p>Valida credenciales antes de confirmar pedidos y protege el acceso a las operaciones del usuario.</p></article>
+          <article class="feature-card reveal delay-2"><span>03</span><h3>Catálogo de servicios</h3><p>Presenta diferentes soluciones de software y permite ingresar al cotizador correspondiente.</p></article>
+          <article class="feature-card reveal"><span>04</span><h3>Cotizaciones dinámicas</h3><p>Suma precios base, extras y configuraciones para mostrar un total estimado en tiempo real.</p></article>
+          <article class="feature-card reveal delay-1"><span>05</span><h3>Carrito de servicios</h3><p>Agrupa los servicios seleccionados, permite revisar detalles y eliminar opciones antes de confirmar.</p></article>
+          <article class="feature-card reveal delay-2"><span>06</span><h3>Pedidos y seguimiento</h3><p>Guarda la solicitud, asigna un número de pedido y permite visualizar el avance del proyecto.</p></article>
+          <article class="feature-card reveal"><span>07</span><h3>Base de datos</h3><p>Centraliza clientes, pedidos y detalles para conservar la información entre sesiones.</p></article>
+          <article class="feature-card reveal delay-1"><span>08</span><h3>Validaciones</h3><p>Controla campos, sesiones y condiciones antes de guardar información o ejecutar procesos.</p></article>
+        </div>
+
+        <div class="flow reveal">
+          <div class="flow-step"><b>1</b><span>Registro / login</span></div><i>→</i>
+          <div class="flow-step"><b>2</b><span>Elegir servicio</span></div><i>→</i>
+          <div class="flow-step"><b>3</b><span>Configurar</span></div><i>→</i>
+          <div class="flow-step"><b>4</b><span>Agregar al carrito</span></div><i>→</i>
+          <div class="flow-step"><b>5</b><span>Confirmar pedido</span></div><i>→</i>
+          <div class="flow-step"><b>6</b><span>Dar seguimiento</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="diseno">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">05 · DISEÑO DEL PROYECTO</span>
+          <h2>Arquitectura simple, modular y conectada a datos.</h2>
+          <p>La organización separa la interfaz, la lógica del sistema y el acceso a los datos. Esto facilita mantener el código y ampliar nuevos módulos.</p>
+        </div>
+
+        <div class="architecture reveal" role="img" aria-label="Arquitectura del sistema ZAVCKI">
+          <div class="arch-node arch-user"><span>USUARIO</span><strong>Cliente</strong><small>Interactúa con el sistema</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-node arch-ui"><span>PRESENTACIÓN</span><strong>Java Swing</strong><small>Pantallas, formularios y navegación</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-node arch-logic"><span>LÓGICA</span><strong>Java</strong><small>Cotizaciones, carrito y pedidos</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-node arch-data"><span>ACCESO A DATOS</span><strong>DAO + JDBC</strong><small>Consultas y operaciones SQL</small></div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-node arch-db"><span>BASE DE DATOS</span><strong>MySQL</strong><small>Clientes, pedidos y detalles</small></div>
+        </div>
+
+        <div class="design-grid">
+          <article class="design-card reveal"><span>Modelo de desarrollo</span><h3>Incremental</h3><p>El sistema se construyó por partes: interfaz, servicios, cotizaciones, carrito, base de datos y seguimiento.</p></article>
+          <article class="design-card reveal delay-1"><span>Persistencia</span><h3>Modelo relacional</h3><p>Tablas principales como clientes, pedidos y detalle_pedido se relacionan para conservar cada operación.</p></article>
+          <article class="design-card reveal delay-2"><span>Organización</span><h3>Clases especializadas</h3><p>Objetos como ClienteDAO, PedidosDao, Carrito e ItemCarrito dividen responsabilidades dentro del código.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="prototipo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">06 · PROTOTIPO Y RECURSOS VISUALES</span>
+          <h2>Pantallas y documentación visual desarrolladas para ZAVCKI.</h2>
+          <p>Haz clic en cualquier recurso para verlo a pantalla completa durante la exposición.</p>
+        </div>
+
+        <div class="gallery">
+          <button class="gallery-card reveal" data-image="img/login-zavcki.png" data-title="Inicio de sesión ZAVCKI">
+            <img src="img/login-zavcki.png" alt="Prototipo de inicio de sesión de ZAVCKI" loading="lazy" />
+            <span><b>Inicio de sesión</b><small>Acceso al sistema</small></span>
+          </button>
+          <button class="gallery-card reveal delay-1" data-image="img/catalogo-zavcki.png" data-title="Catálogo de productos y servicios">
+            <img src="img/catalogo-zavcki.png" alt="Catálogo de productos y servicios de ZAVCKI" loading="lazy" />
+            <span><b>Productos y servicios</b><small>Catálogo visual</small></span>
+          </button>
+          <button class="gallery-card reveal delay-2" data-image="img/ecommerce-zavcki.png" data-title="Servicio E-commerce">
+            <img src="img/ecommerce-zavcki.png" alt="Pantalla del servicio E-commerce de ZAVCKI" loading="lazy" />
+            <span><b>E-commerce</b><small>Servicio configurable</small></span>
+          </button>
+          <button class="gallery-card reveal" data-image="img/cotizador-nube-zavcki.png" data-title="Cotizador de sistemas en la nube">
+            <img src="img/cotizador-nube-zavcki.png" alt="Cotizador de sistemas en la nube de ZAVCKI" loading="lazy" />
+            <span><b>Cotizador</b><small>Configuración y total</small></span>
+          </button>
+          <button class="gallery-card reveal delay-1" data-image="img/arquitectura-final-zavcki.svg" data-title="Arquitectura final de ZAVCKI">
+            <img src="img/arquitectura-final-zavcki.svg" alt="Arquitectura final Java Swing, DAO y MySQL de ZAVCKI" loading="lazy" />
+            <span><b>Arquitectura final</b><small>Java Swing · DAO/JDBC · MySQL</small></span>
+          </button>
+          <button class="gallery-card reveal delay-2" data-image="img/modelo-datos-zavcki.svg" data-title="Modelo de datos principal">
+            <img src="img/modelo-datos-zavcki.svg" alt="Modelo de datos principal de ZAVCKI" loading="lazy" />
+            <span><b>Modelo de datos</b><small>Clientes · pedidos · detalle</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tecnologias">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">07 · TECNOLOGÍAS UTILIZADAS</span>
+          <h2>Herramientas empleadas en el desarrollo.</h2>
+        </div>
+
+        <div class="tech-grid">
+          <article class="tech-card reveal"><div class="tech-icon">J</div><h3>Java</h3><p>Lógica principal del sistema y programación orientada a objetos.</p></article>
+          <article class="tech-card reveal delay-1"><div class="tech-icon">UI</div><h3>Java Swing</h3><p>Construcción de ventanas, formularios, botones y pantallas del software.</p></article>
+          <article class="tech-card reveal delay-2"><div class="tech-icon">SQL</div><h3>MySQL</h3><p>Almacenamiento de clientes, pedidos, detalles y datos relacionados.</p></article>
+          <article class="tech-card reveal"><div class="tech-icon">DB</div><h3>JDBC / DAO</h3><p>Conexión con la base de datos y separación de las operaciones de acceso a datos.</p></article>
+          <article class="tech-card reveal delay-1"><div class="tech-icon">XA</div><h3>XAMPP</h3><p>Entorno local utilizado para trabajar con el servicio de base de datos.</p></article>
+          <article class="tech-card reveal delay-2"><div class="tech-icon">IDE</div><h3>Entorno de desarrollo</h3><p>Herramientas de edición y ejecución utilizadas durante la construcción del proyecto.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="escalabilidad">
+      <div class="container scale-grid">
+        <div class="section-heading light reveal">
+          <span class="eyebrow">08 · ESCALABILIDAD</span>
+          <h2>ZAVCKI puede crecer sin rehacer todo el sistema.</h2>
+          <p>La estructura modular permite incorporar nuevas funciones en versiones futuras según las necesidades del proyecto.</p>
+        </div>
+
+        <div class="roadmap reveal delay-1">
+          <article><span>01</span><div><h3>Panel administrativo avanzado</h3><p>Roles, métricas, reportes y administración centralizada.</p></div></article>
+          <article><span>02</span><div><h3>Portal web para clientes</h3><p>Consulta de cotizaciones y seguimiento desde navegador o teléfono.</p></div></article>
+          <article><span>03</span><div><h3>Pagos e integración externa</h3><p>Conectar pasarelas de pago y servicios de facturación en una futura versión.</p></div></article>
+          <article><span>04</span><div><h3>Notificaciones automáticas</h3><p>Alertas por correo o mensajería cuando cambie el estado de un pedido.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="desarrollador">
+      <div class="container developer-wrap">
+        <div class="developer-card reveal">
+          <div class="developer-brand">
+            <div class="big-z">Z</div>
+            <div><span>PROYECTO</span><strong>ZAVCKI</strong></div>
+          </div>
+          <div class="developer-info">
+            <span>DESARROLLADOR</span>
+            <h2>Anderson Isaac Contreras Melgar</h2>
+            <p>6°. Perito en Desarrollo de Contenido Digital y Software</p>
+            <dl>
+              <div><dt>Establecimiento</dt><dd>Escuela “Marion G. Bock”</dd></div>
+              <div><dt>Ciclo escolar</dt><dd>2026</dd></div>
+              <div><dt>Proyecto</dt><dd>Sistema de cotizaciones y gestión de servicios de software</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="closing-card reveal delay-1">
+          <span>RESULTADO</span>
+          <h3>Una propuesta funcional, visual y preparada para seguir creciendo.</h3>
+          <p>ZAVCKI integra diseño, programación orientada a objetos y persistencia de datos en una solución que demuestra el proceso completo de análisis, desarrollo e implementación de un sistema informático.</p>
+          <a href="#inicio" class="btn btn-primary">Volver al inicio ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>ZAVCKI</strong><span>Proyecto de certificación · 2026</span></div>
+      <p>Escuela “Marion G. Bock” · Perito en Desarrollo de Contenido Digital y Software</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Vista ampliada">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">×</button>
+    <figure>
+      <img id="lightboxImage" src="" alt="" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

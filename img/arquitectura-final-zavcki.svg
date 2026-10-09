@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#edf4ff"/></linearGradient>
+    <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#0f2346" flood-opacity=".12"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#7f93ad"/></marker>
+  </defs>
+  <rect width="1400" height="820" fill="url(#bg)"/>
+  <text x="700" y="80" text-anchor="middle" font-family="Segoe UI,Arial" font-size="38" font-weight="800" fill="#0f2346">ARQUITECTURA FINAL DEL SISTEMA ZAVCKI</text>
+  <text x="700" y="118" text-anchor="middle" font-family="Segoe UI,Arial" font-size="18" fill="#68758a">Aplicación de escritorio · Java Swing · DAO/JDBC · MySQL</text>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="250" rx="26" width="230" height="250" fill="#fff" stroke="#dfe7f3"/>
+    <circle cx="195" cy="320" r="42" fill="#eaf2ff"/><text x="195" y="334" text-anchor="middle" font-family="Segoe UI" font-size="34" font-weight="800" fill="#2563eb">U</text>
+    <text x="195" y="400" text-anchor="middle" font-family="Segoe UI" font-size="15" font-weight="800" fill="#2563eb">USUARIO</text>
+    <text x="195" y="433" text-anchor="middle" font-family="Segoe UI" font-size="24" font-weight="800" fill="#0f2346">Cliente</text>
+    <text x="195" y="464" text-anchor="middle" font-family="Segoe UI" font-size="14" fill="#68758a">Interactúa con el sistema</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="390" y="210" rx="26" width="260" height="330" fill="#fff" stroke="#bfd5ff"/>
+    <rect x="420" y="245" rx="18" width="200" height="115" fill="#eef5ff" stroke="#cfe0ff"/>
+    <rect x="442" y="270" rx="8" width="68" height="14" fill="#2563eb"/><rect x="442" y="296" rx="8" width="145" height="10" fill="#bdcbe0"/><rect x="442" y="320" rx="8" width="112" height="10" fill="#d6e0ed"/>
+    <text x="520" y="410" text-anchor="middle" font-family="Segoe UI" font-size="15" font-weight="800" fill="#2563eb">PRESENTACIÓN</text>
+    <text x="520" y="444" text-anchor="middle" font-family="Segoe UI" font-size="25" font-weight="800" fill="#0f2346">Java Swing</text>
+    <text x="520" y="476" text-anchor="middle" font-family="Segoe UI" font-size="14" fill="#68758a">Ventanas · formularios · botones</text>
+    <text x="520" y="498" text-anchor="middle" font-family="Segoe UI" font-size="14" fill="#68758a">catálogo · cotizadores · seguimiento</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="730" y="210" rx="26" width="260" height="330" fill="#fff" stroke="#c6d9ff"/>
+    <circle cx="860" cy="305" r="55" fill="url(#blue)"/><text x="860" y="322" text-anchor="middle" font-family="Segoe UI" font-size="42" font-weight="900" fill="#fff">J</text>
+    <text x="860" y="410" text-anchor="middle" font-family="Segoe UI" font-size="15" font-weight="800" fill="#2563eb">LÓGICA DE NEGOCIO</text>
+    <text x="860" y="444" text-anchor="middle" font-family="Segoe UI" font-size="25" font-weight="800" fill="#0f2346">Java</text>
+    <text x="860" y="476" text-anchor="middle" font-family="Segoe UI" font-size="14" fill="#68758a">Carrito · ItemCarrito</text>
+    <text x="860" y="498" text-anchor="middle" font-family="Segoe UI" font-size="14" fill="#68758a">cálculos · validaciones · sesión</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1070" y="185" rx="26" width="250" height="160" fill="#fff" stroke="#f0d79d"/>
+    <text x="1195" y="230" text-anchor="middle" font-family="Segoe UI" font-size="14" font-weight="800" fill="#c38213">ACCESO A DATOS</text>
+    <text x="1195" y="265" text-anchor="middle" font-family="Segoe UI" font-size="24" font-weight="800" fill="#0f2346">DAO + JDBC</text>
+    <text x="1195" y="295" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#68758a">ClienteDAO · PedidosDao</text>
+    <text x="1195" y="318" text-anchor="middle" font-family="Segoe UI" font-size="13" fill="#68758a">Consultas y operaciones SQL</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1070" y="395" rx="26" width="250" height="175" fill="#fff" stroke="#d7c7fb"/>
+    <ellipse cx="1195" cy="440" rx="52" ry="18" fill="#7c5ce7"/><rect x="1143" y="440" width="104" height="52" fill="#8b6cf0"/><ellipse cx="1195" cy="492" rx="52" ry="18" fill="#7554df"/>
+    <text x="1195" y="532" text-anchor="middle" font-family="Segoe UI" font-size="14" font-weight="800" fill="#7357d7">BASE DE DATOS</text>
+    <text x="1195" y="558" text-anchor="middle" font-family="Segoe UI" font-size="23" font-weight="800" fill="#0f2346">MySQL</text>
+  </g>
+
+  <line x1="310" y1="375" x2="390" y2="375" stroke="#7f93ad" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="650" y1="375" x2="730" y2="375" stroke="#7f93ad" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M990 355 C1035 355,1030 265,1070 265" fill="none" stroke="#7f93ad" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1195" y1="345" x2="1195" y2="395" stroke="#7f93ad" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="185" y="645" rx="22" width="1030" height="105" fill="#0f2346"/>
+    <text x="700" y="685" text-anchor="middle" font-family="Segoe UI" font-size="15" font-weight="800" fill="#78adff">FLUJO DE DATOS</text>
+    <text x="700" y="722" text-anchor="middle" font-family="Segoe UI" font-size="19" font-weight="700" fill="#fff">Usuario → Interfaz → Lógica → DAO/JDBC → MySQL → respuesta al usuario</text>
+  </g>
+</svg>
